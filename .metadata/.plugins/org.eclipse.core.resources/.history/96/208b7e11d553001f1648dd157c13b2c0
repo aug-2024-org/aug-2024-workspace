@@ -1,0 +1,17 @@
+import java.util.*;
+
+
+public class Question2 {
+	Scanner obj = new Scanner(System.in);
+	int last= obj.nextInt();
+	int iter= 800;
+	int step =2;
+	List<Integer> values= new ArrayList<Integer>();
+	while(iter<=last) {
+		
+	}
+	
+	
+	
+
+}

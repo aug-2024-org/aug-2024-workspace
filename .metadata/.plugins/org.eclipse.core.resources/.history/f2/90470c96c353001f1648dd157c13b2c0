@@ -1,0 +1,28 @@
+
+public class Question3 {
+	public static void main(String args[]) {
+		String numberPlate = "5zdt-yt-h1";
+		int count = 5;
+		int counter = 0;
+		String alteredPlate = "";
+		String finalPlate = "";
+
+		for(char ch : numberPlate.toCharArray()) {
+			if(ch != '-')
+				alteredPlate = alteredPlate + ch;
+		}
+		System.out.println(alteredPlate);
+		String arrangedNumberPlate = "";
+		for(char ch : alteredPlate.toCharArray()) {
+			arrangedNumberPlate = arrangedNumberPlate + ch;
+			counter++;
+			if(counter == count) {
+				arrangedNumberPlate = "-" + arrangedNumberPlate;
+			}
+		}
+		for(char ch : arrangedNumberPlate.toCharArray()) {
+			finalPlate = ch + arrangedNumberPlate;
+		}
+		System.out.println(finalPlate.toUpperCase());
+	}
+}

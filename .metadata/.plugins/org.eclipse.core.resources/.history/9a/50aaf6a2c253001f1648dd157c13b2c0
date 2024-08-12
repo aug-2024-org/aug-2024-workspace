@@ -1,0 +1,23 @@
+
+public class Question3 {
+	public static void main(String args[]) {
+		String numberPlate = "5zdt-yt-h";
+		int count = 5;
+		int counter = 0;
+		String alteredPlate = "";
+		for(char ch : numberPlate.toCharArray()) {
+			if(ch != '-')
+				alteredPlate = ch + alteredPlate;
+		}
+		System.out.println(alteredPlate);
+		String arrangedNumberPlate = "";
+		for(char ch : alteredPlate.toCharArray()) {
+			arrangedNumberPlate = ch + arrangedNumberPlate;
+			counter++;
+			if(counter == count) {
+				arrangedNumberPlate = "-" + arrangedNumberPlate;
+			}
+		}
+		System.out.println(arrangedNumberPlate.toUpperCase());
+	}
+}
