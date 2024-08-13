@@ -1,0 +1,22 @@
+Case study requirements
+------------------------
+Choose a project with minimum 10 user stories.
+Discuss the project with mentor and get it approved.
+Project should be presented on Friday (16th Aug 2024).
+
+Execution
+---------
+This is a console based application with menu driven UI.
+Project should follow SOLID principle
+Project should be layered with minimum Presentation Layer, Service Layer, DAO Layer. Controller Layer is optional.
+Use POJOs for carrying data.
+Use Collections/File for data store.
+Coding conventions should be strictly followed.
+
+Final presentation
+------------------
+Present the project for 5 minutes.
+QNA for 5 minutes.
+Project should be up and running.
+All cases and scenarios should be handled.
+Apart from basic crud, other operations are expected.
