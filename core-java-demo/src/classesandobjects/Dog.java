@@ -10,7 +10,7 @@ public class Dog extends Animal{
 
 	@Override
 	void mobile() {
-		super.mobile();
+		//super.mobile();
 		System.out.println(name + " walks on 4 legs");
 	}
 	

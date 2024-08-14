@@ -1,11 +1,11 @@
 package classesandobjects;
 
 public class Room {
-	int length;
-	int width;
-	int height;
-	String roomColor;
-	int roomNumber;
+	private int length;
+	private int width;
+	private int height;
+	private String roomColor;
+	private int roomNumber;
 
 	Room(int length, int width, int height){
 		this.length = length;
@@ -26,6 +26,52 @@ public class Room {
 		this.roomNumber = roomNumber;
 	}
 	
+	// public getter method for length
+	// getters are also known as accessors
+	// getters are providing the read access to the property
+	public int getLength() {
+		return length;
+	}
+	
+	// public setter method for length
+	// setters are also known as mutators
+	// setters are providing the write acess to the property
+	public void setLength(int length) {
+		this.length = length;
+	}
+	
+	public int getWidth() {
+		return width;
+	}
+
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
+	public String getRoomColor() {
+		return roomColor;
+	}
+
+	public void setRoomColor(String roomColor) {
+		this.roomColor = roomColor;
+	}
+
+	public int getRoomNumber() {
+		return roomNumber;
+	}
+
+	public void setRoomNumber(int roomNumber) {
+		this.roomNumber = roomNumber;
+	}
+
 	int calculateFloorArea() {
 		int floorArea = length * width;
 		return floorArea;

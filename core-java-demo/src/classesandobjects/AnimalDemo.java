@@ -3,9 +3,9 @@ package classesandobjects;
 public class AnimalDemo {
 
 	public static void main(String[] args) {
-		Animal animal = new Animal("animal");
-		animal.breathe();
-		animal.mobile();
+//		Animal animal = new Animal("animal");
+//		animal.breathe();
+//		animal.mobile();
 		System.out.println("-----------");
 		
 		Dog dog = new Dog("Lucifer Dog", "Black");

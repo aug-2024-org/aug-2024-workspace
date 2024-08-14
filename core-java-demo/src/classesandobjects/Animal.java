@@ -1,6 +1,6 @@
 package classesandobjects;
 
-public class Animal {
+public abstract class Animal {
 	String name;
 	
 	Animal(String name){
@@ -11,8 +11,6 @@ public class Animal {
 		System.out.println(name + " is breathing");
 	}
 	
-	void mobile() {
-		System.out.println(name + " is mobile");
-	}
+	 abstract void mobile();
 
 }
