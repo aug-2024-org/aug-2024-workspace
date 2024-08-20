@@ -1,8 +1,0 @@
-
-public class Question3 {
-	public static void main(String args[]) {
-		String numberPlate = "5zdt-yt-h";
-		int count = 5;
-		
-	}
-}

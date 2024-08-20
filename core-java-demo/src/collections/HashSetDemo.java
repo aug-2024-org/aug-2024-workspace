@@ -4,6 +4,8 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
+import classesandobjects.Room;
+
 public class HashSetDemo {
 	public static void main(String[] srgs) {
 		Set<String> allCities = new HashSet<>();
@@ -35,6 +37,15 @@ public class HashSetDemo {
 		allCities.forEach((eachCity) -> System.out.println(eachCity));
 		
 		System.out.println("--------------");
+		
+		Set<Room> allRooms = new HashSet<>();
+		allRooms.add(new Room(200, 100, 50));
+		allRooms.add(new Room(100, 80, 50));
+		allRooms.add(new Room(800, 300, 50));
+		allRooms.add(new Room(100, 80, 50)); // duplicate
+		allRooms.add(new Room(250, 150, 50));
+		
+		allRooms.forEach((eachRoom)-> System.out.println(eachRoom));
 		
 		
 	}

@@ -1,13 +1,15 @@
 package classesandobjects;
 
-public class Room {
+import java.util.Objects;
+
+public class Room implements Comparable<Room>{
 	private int length;
 	private int width;
 	private int height;
 	private String roomColor;
 	private int roomNumber;
 
-	Room(int length, int width, int height){
+	public Room(int length, int width, int height){
 		this.length = length;
 		this.width = width;
 		this.height = height;
@@ -80,5 +82,46 @@ public class Room {
 	int costOfPaintingWalls() {
 		int costOfPainting = (2 * (length * height) + 2 * (width * height) ) * 2;
 		return costOfPainting;
+	}
+
+	@Override
+	public int compareTo(Room o) {
+		return (this.length * this.width) - (o.length * o.width);
+	}
+
+//	@Override
+//	public boolean equals(Object o) {
+//		Room otherRoom = (Room)o;
+//		if(this.length != otherRoom.getLength())
+//			return false;
+//		if(this.width != otherRoom.width)
+//			return false;
+//		if(this.height != otherRoom.height)
+//			return false;
+//
+//		return true;
+//	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(height, length, width);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Room other = (Room) obj;
+		return height == other.height && length == other.length && width == other.width;
+	}
+
+	@Override
+	public String toString() {
+		return "Room [length=" + length + ", width=" + width + ", height=" + height + ", roomColor=" + roomColor
+				+ ", roomNumber=" + roomNumber + "]";
 	}
 }
