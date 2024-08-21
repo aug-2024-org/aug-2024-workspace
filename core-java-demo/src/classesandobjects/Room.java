@@ -2,13 +2,36 @@ package classesandobjects;
 
 import java.util.Objects;
 
+// whenever a class name is encountered
+// 1. Loads the class in the memory
+// 2. allocates memory for static variables
+// 3. the static blocks are called in the order in which they are writtern
+
+// Then when an object is created
+// 4. memory for instance variables will be allocated
+// 5. constructor is called
+
+// another abject is created
+//6. memory for instance variables will be allocated
+//7. constructor is called
+
+//can a static method access static members? yes
+//can a static method access non - static members? no
+//can a non-static method access static members? yes
+//can a non-static method access non-static members? yes
+
+
 public class Room implements Comparable<Room>{
 	private int length;
 	private int width;
-	private int height;
+	private static int height;
 	private String roomColor;
 	private int roomNumber;
 
+	static {
+		height = 50;
+	}
+	
 	public Room(int length, int width, int height){
 		this.length = length;
 		this.width = width;
@@ -84,6 +107,12 @@ public class Room implements Comparable<Room>{
 		return costOfPainting;
 	}
 
+	public static int doubleTheHeight() {
+		return 2 * height;
+		
+		
+	}
+	
 	@Override
 	public int compareTo(Room o) {
 		return (this.length * this.width) - (o.length * o.width);

@@ -21,11 +21,11 @@ public class FordFigo {
 		return "Locked " + carModel +"...";
 	}
 	
-	String start() {
+	final String start() {
 		return "Started " + carModel +"...";
 	}
 	
-	String stop() {
+	final String stop() {
 		return "Stopped " + carModel +"...";
 	}
 	

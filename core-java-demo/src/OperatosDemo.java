@@ -13,6 +13,10 @@ public class OperatosDemo {
 	
 	public static void main(String[] args) {
 		
+		final int MIN_AGE = 18;
+		//MIN_AGE = 21;
+		
+		
 		int num1 = 50;
 		int num2 = 60;
 		int largestNum = (num1>num2)?num1:num2;
