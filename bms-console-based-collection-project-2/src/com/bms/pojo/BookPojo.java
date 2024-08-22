@@ -8,20 +8,22 @@ public class BookPojo {
 	private String bookTitle;
 	private AuthorPojo author;
 	private String bookGenre;
-	private LocalDate bookPublished;
-	private String bookImageUrl; 
+	private LocalDate bookPublished; 
+	private int bookPrice;
 	private List<CharacterPojo> characters;
+	private String bookImageUrl;
 	
 	public BookPojo(int bookId, String bookTitle, AuthorPojo author, String bookGenre, LocalDate bookPublished,
-			String bookImageUrl, List<CharacterPojo> characters) {
+			int bookPrice, List<CharacterPojo> characters, String bookImageUrl) {
 		super();
 		this.bookId = bookId;
 		this.bookTitle = bookTitle;
 		this.author = author;
 		this.bookGenre = bookGenre;
 		this.bookPublished = bookPublished;
-		this.bookImageUrl = bookImageUrl;
+		this.bookPrice = bookPrice;
 		this.characters = characters;
+		this.bookImageUrl = bookImageUrl;
 	}
 
 	public int getBookId() {
@@ -64,12 +66,12 @@ public class BookPojo {
 		this.bookPublished = bookPublished;
 	}
 
-	public String getBookImageUrl() {
-		return bookImageUrl;
+	public int getBookPrice() {
+		return bookPrice;
 	}
 
-	public void setBookImageUrl(String bookImageUrl) {
-		this.bookImageUrl = bookImageUrl;
+	public void setBookPrice(int bookPrice) {
+		this.bookPrice = bookPrice;
 	}
 
 	public List<CharacterPojo> getCharacters() {
@@ -80,10 +82,19 @@ public class BookPojo {
 		this.characters = characters;
 	}
 
+	public String getBookImageUrl() {
+		return bookImageUrl;
+	}
+
+	public void setBookImageUrl(String bookImageUrl) {
+		this.bookImageUrl = bookImageUrl;
+	}
+
 	@Override
 	public String toString() {
 		return "BookPojo [bookId=" + bookId + ", bookTitle=" + bookTitle + ", author=" + author + ", bookGenre="
-				+ bookGenre + ", bookPublished=" + bookPublished + ", bookImageUrl=" + bookImageUrl + ", characters="
-				+ characters + "]";
+				+ bookGenre + ", bookPublished=" + bookPublished + ", bookPrice=" + bookPrice + ", characters="
+				+ characters + ", bookImageUrl=" + bookImageUrl + "]";
 	}
+	
 }
