@@ -2,13 +2,18 @@ package com.bms.presentation;
 
 import java.util.List;
 
+import com.bms.dao.AuthorDao;
+import com.bms.dao.AuthorDaoJdbcImpl;
 import com.bms.dao.BookDao;
 import com.bms.dao.BookDaoJdbcImpl;
+import com.bms.model.AuthorPojo;
 import com.bms.model.BookPojo;
 import com.bms.model.CharacterPojo;
 public class Presentation {
 	public static void start() {
 		BookDao bookDao = new BookDaoJdbcImpl();
+		AuthorDao authorDao = new AuthorDaoJdbcImpl();
+		
 		List<BookPojo> allBooksOnly = bookDao.fetchAllBooksOnly(); 
 		for(BookPojo eachBook: allBooksOnly) {
 			System.out.println("Book ID:" + eachBook.getBookId());
@@ -33,5 +38,7 @@ public class Presentation {
 			}
 			System.out.println("-----------------");			
 		}
+		System.out.println("=======================");
+		System.out.println(authorDao.addAuthor(new AuthorPojo(0, "TESTING", "TESTING", "TESTING")));
 	}
 }

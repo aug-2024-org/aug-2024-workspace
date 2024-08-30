@@ -43,6 +43,14 @@ CREATE TABLE BMS.book_character_details(
 );
 
 
+CREATE OR REPLACE PROCEDURE insert_author (auth_firstname IN VARCHAR, auth_lastname IN VARCHAR2, auth_image_url IN VARCHAR2, out_author_id OUT NUMBER) AS
+   BEGIN
+    INSERT INTO 
+        author_details(author_firstname, author_lastname, author_image_url) 
+        VALUES(auth_firstname, auth_lastname, auth_image_url)
+        RETURNING author_id INTO out_author_id;
+   END;
+/
 
 INSERT INTO character_details(character_firstname, character_lastname, character_image_url) VALUES('Haryy', 'Potter', 'https://cdn.pixabay.com/photo/2018/09/11/19/22/harry-potter-3670411_1280.png');
 INSERT INTO character_details(character_firstname, character_lastname, character_image_url) VALUES('Ron', 'Weasley', 'https://cdn.pixabay.com/photo/2019/04/16/17/17/ron-4132263_1280.jpg');
