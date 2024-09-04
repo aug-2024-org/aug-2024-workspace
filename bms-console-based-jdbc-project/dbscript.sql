@@ -49,6 +49,7 @@ CREATE OR REPLACE PROCEDURE insert_author (auth_firstname IN VARCHAR, auth_lastn
         author_details(author_firstname, author_lastname, author_image_url) 
         VALUES(auth_firstname, auth_lastname, auth_image_url)
         RETURNING author_id INTO out_author_id;
+     
    END;
 /
 
