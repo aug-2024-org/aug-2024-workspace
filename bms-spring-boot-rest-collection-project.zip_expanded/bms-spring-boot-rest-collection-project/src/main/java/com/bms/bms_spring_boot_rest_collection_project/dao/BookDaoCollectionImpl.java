@@ -1,8 +1,11 @@
 package com.bms.bms_spring_boot_rest_collection_project.dao;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.springframework.stereotype.Repository;
 
@@ -44,7 +47,8 @@ public class BookDaoCollectionImpl implements BookDao{
 
 	@Override
 	public BookPojo updateBook(BookPojo updateBook) {
-		return bookDataStore.replace(updateBook.getBookId(), updateBook);
+		bookDataStore.replace(updateBook.getBookId(), updateBook);
+		return bookDataStore.get(updateBook.getBookId());
 	}
 
 	@Override
@@ -52,4 +56,18 @@ public class BookDaoCollectionImpl implements BookDao{
 		bookDataStore.remove(bookId);
 	}
 
+	@Override
+	public List<BookPojo> fetchBooksByGenre(String genre) {
+		List<BookPojo> returnedList = new ArrayList<>();
+		Set<Integer> allKeys = bookDataStore.keySet();
+		for(Integer eachKey: allKeys) {
+			BookPojo book = bookDataStore.get(eachKey);
+			if(book.getBookGenre().equals(genre)) {
+				returnedList.add(book);
+			}
+		}
+		return returnedList;
+	}
+
 }
+ 

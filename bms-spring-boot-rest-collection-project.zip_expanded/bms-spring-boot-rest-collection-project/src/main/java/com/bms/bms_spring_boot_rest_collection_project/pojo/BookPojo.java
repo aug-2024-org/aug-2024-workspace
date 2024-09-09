@@ -1,5 +1,7 @@
 package com.bms.bms_spring_boot_rest_collection_project.pojo;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
