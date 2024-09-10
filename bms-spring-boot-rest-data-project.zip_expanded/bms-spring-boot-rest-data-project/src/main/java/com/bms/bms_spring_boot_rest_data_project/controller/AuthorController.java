@@ -1,13 +1,14 @@
 package com.bms.bms_spring_boot_rest_data_project.controller;
 
 import java.util.Collection;
-import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -52,6 +53,13 @@ public class AuthorController {
 	@PutMapping("/authors")
 	public ResponseEntity<AuthorPojo> updateAuthor(@RequestBody AuthorPojo updateAuthor){
 		AuthorPojo returnedAuthor = authorService.updateAuthor(updateAuthor);
+		return new ResponseEntity<AuthorPojo>(returnedAuthor, HttpStatus.OK);
+	}
+	
+	// updateAuthor
+	@PatchMapping("/authors/{aid}")
+	public ResponseEntity<AuthorPojo> patchAuthor(@PathVariable("aid") int authorId, @RequestBody Map<String, Object> updateFieldsAuthor){
+		AuthorPojo returnedAuthor = authorService.patchAuthor(authorId, updateFieldsAuthor);
 		return new ResponseEntity<AuthorPojo>(returnedAuthor, HttpStatus.OK);
 	}
 	

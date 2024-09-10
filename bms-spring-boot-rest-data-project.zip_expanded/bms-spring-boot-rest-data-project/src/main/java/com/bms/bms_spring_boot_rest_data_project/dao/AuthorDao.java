@@ -7,5 +7,5 @@ import com.bms.bms_spring_boot_rest_data_project.dao.entity.AuthorEntity;
 
 @Repository
 public interface AuthorDao extends JpaRepository<AuthorEntity, Integer>{
-
+	
 }

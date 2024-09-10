@@ -1,12 +1,15 @@
 package com.bms.bms_spring_boot_rest_data_project.service;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ReflectionUtils;
 
 import com.bms.bms_spring_boot_rest_data_project.dao.AuthorDao;
 import com.bms.bms_spring_boot_rest_data_project.dao.entity.AuthorEntity;
@@ -72,6 +75,25 @@ public class AuthorServiceImpl implements AuthorService{
 	@Override
 	public void deleteAuthor(int authorId) {
 		authorDao.deleteById(authorId);
+	}
+
+	@Override
+	public AuthorPojo patchAuthor(int authorId, Map<String, Object> updateFieldsAuthor) {
+		Optional<AuthorEntity> currentAuthorEntity = authorDao.findById(authorId);
+		
+		if(currentAuthorEntity.isPresent()) {
+			updateFieldsAuthor.forEach((key, value) -> {
+				Field field = ReflectionUtils.findField(AuthorEntity.class, key);
+				field.setAccessible(true);
+				ReflectionUtils.setField(field, currentAuthorEntity.get(), value);
+			});
+			authorDao.saveAndFlush(currentAuthorEntity.get());
+			AuthorPojo authorPojo = new AuthorPojo();
+			BeanUtils.copyProperties(currentAuthorEntity.get(), authorPojo);
+			
+			return authorPojo;
+		}
+		return null;
 	}
 
 }

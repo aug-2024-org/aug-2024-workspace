@@ -1,6 +1,7 @@
 package com.bms.bms_spring_boot_rest_data_project.controller;
 
 import java.util.Collection;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -34,6 +35,12 @@ public class BookController {
 	public ResponseEntity<BookPojo> fetchABook(@PathVariable("bid") int bookId) {
 		BookPojo fetchedBook = bookService.fetchABook(bookId);
 		return new ResponseEntity<BookPojo>(fetchedBook, HttpStatus.OK);
+	}
+	
+	@GetMapping("/books/genre/{genre}")
+	public ResponseEntity<List<BookPojo>> fetchBookByGenre(@PathVariable("genre") String bookGenre) {
+		List<BookPojo> allFetchedBook = bookService.fetchByBookGenre(bookGenre);
+		return new ResponseEntity<List<BookPojo>>(allFetchedBook, HttpStatus.OK);
 	}
 	
 	@PostMapping("/books")

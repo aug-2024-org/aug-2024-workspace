@@ -2,7 +2,9 @@ package com.bms.bms_spring_boot_rest_data_project.dao.entity;
 
 import java.util.List;
 
-import jakarta.persistence.CascadeType;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -20,6 +22,9 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name="author_details") // optional if table name and class name are same
+@JsonIdentityInfo(
+		  generator = ObjectIdGenerators.PropertyGenerator.class, 
+		  property = "authorId")
 public class AuthorEntity {
 	
 	@Id

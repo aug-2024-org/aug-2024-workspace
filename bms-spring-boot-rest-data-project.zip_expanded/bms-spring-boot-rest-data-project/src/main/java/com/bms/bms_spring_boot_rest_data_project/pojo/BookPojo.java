@@ -1,12 +1,8 @@
 package com.bms.bms_spring_boot_rest_data_project.pojo;
 
 import java.time.LocalDate;
+import java.util.List;
 
-import com.bms.bms_spring_boot_rest_data_project.dao.entity.AuthorEntity;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,4 +18,13 @@ public class BookPojo {
 	private int bookPrice;
 	private LocalDate bookPublished;
 	private String bookImageUrl;
+	private List<CharacterPojo> allCharactersPojo;
+	
+	public BookPojo(int bookId, String bookTitle) {
+		super();
+		this.bookId = bookId;
+		this.bookTitle = bookTitle;
+	}
+	
+	
 }
