@@ -30,7 +30,6 @@ public class UserInfo {
 	private String userFirstName;
 	private String userLastName;
 	
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name="loginId")
-	private UserLogin userLogin;
+	//@OneToOne(mappedBy="userIn" ,cascade = CascadeType.ALL, orphanRemoval = true)
+	//private UserLogin userLogin;
 }

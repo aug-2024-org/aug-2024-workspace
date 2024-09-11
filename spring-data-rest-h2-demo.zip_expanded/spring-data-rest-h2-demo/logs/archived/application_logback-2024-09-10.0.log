@@ -1,0 +1,446 @@
+2024-09-10 20:43:24 [restartedMain] INFO  : Starting SpringDataRestH2DemoApplication using Java 17.0.8 with PID 34388 (D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo)
+2024-09-10 20:43:24 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-09-10 20:43:24 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 20:43:24 [restartedMain] INFO  : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2024-09-10 20:43:24 [restartedMain] INFO  : Tomcat initialized with port 5555 (http)
+2024-09-10 20:43:24 [restartedMain] INFO  : Starting service [Tomcat]
+2024-09-10 20:43:24 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 20:43:24 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-09-10 20:43:24 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 192 ms
+2024-09-10 20:43:24 [restartedMain] INFO  : HikariPool-10 - Starting...
+2024-09-10 20:43:24 [restartedMain] INFO  : HikariPool-10 - Added connection conn94: url=jdbc:h2:mem:testdb user=SA
+2024-09-10 20:43:24 [restartedMain] INFO  : HikariPool-10 - Start completed.
+2024-09-10 20:43:24 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-10 20:43:24 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 20:43:24 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-09-10 20:43:24 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 20:43:24 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 20:43:24 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 20:43:25 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 20:43:25 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-09-10 20:43:25 [restartedMain] INFO  : Tomcat started on port 5555 (http) with context path '/'
+2024-09-10 20:43:25 [restartedMain] INFO  : Started SpringDataRestH2DemoApplication in 0.847 seconds (process running for 2522.113)
+2024-09-10 20:43:25 [restartedMain] INFO  : Condition evaluation unchanged
+2024-09-10 20:43:25 [restartedMain] INFO  : heelo this is log!!
+2024-09-10 20:43:51 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-10 20:43:51 [Thread-48] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 20:43:51 [Thread-48] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-10 20:43:51 [Thread-48] INFO  : HikariPool-10 - Shutdown initiated...
+2024-09-10 20:43:51 [Thread-48] INFO  : HikariPool-10 - Shutdown completed.
+2024-09-10 20:43:51 [restartedMain] INFO  : Starting SpringDataRestH2DemoApplication using Java 17.0.8 with PID 34388 (D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo)
+2024-09-10 20:43:51 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-09-10 20:43:51 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 20:43:51 [restartedMain] INFO  : Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2024-09-10 20:43:51 [restartedMain] INFO  : Tomcat initialized with port 5555 (http)
+2024-09-10 20:43:51 [restartedMain] INFO  : Starting service [Tomcat]
+2024-09-10 20:43:51 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 20:43:51 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-09-10 20:43:51 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 326 ms
+2024-09-10 20:43:51 [restartedMain] INFO  : HikariPool-11 - Starting...
+2024-09-10 20:43:51 [restartedMain] INFO  : HikariPool-11 - Added connection conn104: url=jdbc:h2:mem:testdb user=SA
+2024-09-10 20:43:51 [restartedMain] INFO  : HikariPool-11 - Start completed.
+2024-09-10 20:43:51 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-10 20:43:51 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 20:43:51 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-09-10 20:43:51 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 20:43:52 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 20:43:52 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 20:43:52 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 20:43:52 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-09-10 20:43:52 [restartedMain] INFO  : Tomcat started on port 5555 (http) with context path '/'
+2024-09-10 20:43:52 [restartedMain] INFO  : Started SpringDataRestH2DemoApplication in 1.107 seconds (process running for 2549.218)
+2024-09-10 20:43:52 [restartedMain] INFO  : Condition evaluation unchanged
+2024-09-10 20:43:52 [restartedMain] INFO  : heelo this is log!!
+2024-09-10 20:44:12 [restartedMain] INFO  : Starting SpringDataRestH2DemoApplication using Java 17.0.8 with PID 40472 (D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo)
+2024-09-10 20:44:12 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-09-10 20:44:12 [restartedMain] INFO  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-10 20:44:12 [restartedMain] INFO  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-10 20:44:13 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 20:44:13 [restartedMain] INFO  : Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+2024-09-10 20:44:14 [restartedMain] INFO  : Tomcat initialized with port 5555 (http)
+2024-09-10 20:44:14 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-5555"]
+2024-09-10 20:44:14 [restartedMain] INFO  : Starting service [Tomcat]
+2024-09-10 20:44:14 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 20:44:14 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-09-10 20:44:14 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 2097 ms
+2024-09-10 20:44:14 [restartedMain] INFO  : HikariPool-1 - Starting...
+2024-09-10 20:44:14 [restartedMain] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-09-10 20:44:14 [restartedMain] INFO  : HikariPool-1 - Start completed.
+2024-09-10 20:44:14 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-10 20:44:14 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 20:44:14 [restartedMain] INFO  : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-10 20:44:14 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-09-10 20:44:15 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 20:44:16 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 20:44:16 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 20:44:16 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 20:44:18 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-09-10 20:44:18 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-5555"]
+2024-09-10 20:44:18 [restartedMain] INFO  : Tomcat started on port 5555 (http) with context path '/'
+2024-09-10 20:44:18 [restartedMain] INFO  : Started SpringDataRestH2DemoApplication in 6.966 seconds (process running for 7.421)
+2024-09-10 20:44:18 [restartedMain] INFO  : heelo this is log!!
+2024-09-10 20:45:18 [restartedMain] INFO  : Starting SpringDataRestH2DemoApplication using Java 17.0.8 with PID 12900 (D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo)
+2024-09-10 20:45:18 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-09-10 20:45:18 [restartedMain] INFO  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-10 20:45:18 [restartedMain] INFO  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-10 20:45:19 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 20:45:19 [restartedMain] INFO  : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2024-09-10 20:45:20 [restartedMain] INFO  : Tomcat initialized with port 5555 (http)
+2024-09-10 20:45:20 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-5555"]
+2024-09-10 20:45:20 [restartedMain] INFO  : Starting service [Tomcat]
+2024-09-10 20:45:20 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 20:45:20 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-09-10 20:45:20 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 1765 ms
+2024-09-10 20:45:20 [restartedMain] INFO  : HikariPool-1 - Starting...
+2024-09-10 20:45:20 [restartedMain] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-09-10 20:45:20 [restartedMain] INFO  : HikariPool-1 - Start completed.
+2024-09-10 20:45:20 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-10 20:45:20 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 20:45:20 [restartedMain] INFO  : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-10 20:45:20 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-09-10 20:45:20 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 20:45:21 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 20:45:21 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 20:45:22 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 20:45:23 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-09-10 20:45:23 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-5555"]
+2024-09-10 20:45:23 [restartedMain] INFO  : Tomcat started on port 5555 (http) with context path '/'
+2024-09-10 20:45:23 [restartedMain] INFO  : Started SpringDataRestH2DemoApplication in 6.018 seconds (process running for 6.454)
+2024-09-10 20:45:23 [restartedMain] INFO  : heelo this is log!!
+2024-09-10 20:48:39 [restartedMain] INFO  : Starting SpringDataRestH2DemoApplication using Java 17.0.8 with PID 29316 (D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo)
+2024-09-10 20:48:39 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-09-10 20:48:39 [restartedMain] INFO  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-10 20:48:39 [restartedMain] INFO  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-10 20:48:40 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 20:48:40 [restartedMain] INFO  : Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+2024-09-10 20:48:40 [restartedMain] INFO  : Tomcat initialized with port 5555 (http)
+2024-09-10 20:48:40 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-5555"]
+2024-09-10 20:48:40 [restartedMain] INFO  : Starting service [Tomcat]
+2024-09-10 20:48:40 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 20:48:41 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-09-10 20:48:41 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 1691 ms
+2024-09-10 20:48:41 [restartedMain] INFO  : HikariPool-1 - Starting...
+2024-09-10 20:48:41 [restartedMain] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-09-10 20:48:41 [restartedMain] INFO  : HikariPool-1 - Start completed.
+2024-09-10 20:48:41 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-10 20:48:41 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 20:48:41 [restartedMain] INFO  : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-10 20:48:41 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-09-10 20:48:41 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 20:48:42 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 20:48:42 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 20:48:42 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 20:48:44 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-09-10 20:48:44 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-5555"]
+2024-09-10 20:48:44 [restartedMain] INFO  : Tomcat started on port 5555 (http) with context path '/'
+2024-09-10 20:48:44 [restartedMain] INFO  : Started SpringDataRestH2DemoApplication in 5.969 seconds (process running for 6.403)
+2024-09-10 20:48:44 [restartedMain] INFO  : heelo this is log!!
+2024-09-10 20:52:30 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-10 20:52:30 [Thread-5] INFO  : Stopping ProtocolHandler ["http-nio-5555"]
+2024-09-10 20:52:30 [Thread-5] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 20:52:30 [Thread-5] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-10 20:52:30 [Thread-5] INFO  : HikariPool-1 - Shutdown initiated...
+2024-09-10 20:52:30 [Thread-5] INFO  : HikariPool-1 - Shutdown completed.
+2024-09-10 20:52:30 [restartedMain] INFO  : Starting SpringDataRestH2DemoApplication using Java 17.0.8 with PID 29316 (D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo)
+2024-09-10 20:52:30 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-09-10 20:52:30 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 20:52:30 [restartedMain] INFO  : Finished Spring Data repository scanning in 16 ms. Found 3 JPA repository interfaces.
+2024-09-10 20:52:30 [restartedMain] INFO  : Tomcat initialized with port 5555 (http)
+2024-09-10 20:52:30 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-5555"]
+2024-09-10 20:52:30 [restartedMain] INFO  : Starting service [Tomcat]
+2024-09-10 20:52:30 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 20:52:30 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-09-10 20:52:30 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 460 ms
+2024-09-10 20:52:30 [restartedMain] INFO  : HikariPool-2 - Starting...
+2024-09-10 20:52:30 [restartedMain] INFO  : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2024-09-10 20:52:30 [restartedMain] INFO  : HikariPool-2 - Start completed.
+2024-09-10 20:52:30 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-10 20:52:31 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 20:52:31 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-09-10 20:52:31 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 20:52:31 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 20:52:31 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 20:52:31 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 20:52:32 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-09-10 20:52:32 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-5555"]
+2024-09-10 20:52:32 [restartedMain] INFO  : Tomcat started on port 5555 (http) with context path '/'
+2024-09-10 20:52:32 [restartedMain] INFO  : Started SpringDataRestH2DemoApplication in 1.798 seconds (process running for 233.947)
+2024-09-10 20:52:32 [restartedMain] INFO  : Condition evaluation unchanged
+2024-09-10 20:52:32 [restartedMain] INFO  : heelo this is log!!
+2024-09-10 21:51:54 [HikariPool-2 housekeeper] WARN  : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=7m53s67ms754µs700ns).
+2024-09-10 22:12:04 [File Watcher] INFO  : Restarting due to 13 class path changes (0 additions, 5 deletions, 8 modifications)
+2024-09-10 22:12:04 [Thread-7] INFO  : Stopping ProtocolHandler ["http-nio-5555"]
+2024-09-10 22:12:05 [Thread-7] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:12:05 [Thread-7] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-10 22:12:05 [Thread-7] INFO  : HikariPool-2 - Shutdown initiated...
+2024-09-10 22:12:05 [Thread-7] INFO  : HikariPool-2 - Shutdown completed.
+2024-09-10 22:12:19 [restartedMain] INFO  : Starting SpringDataRestH2DemoApplication using Java 17.0.8 with PID 29316 (D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo)
+2024-09-10 22:12:19 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-09-10 22:12:20 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 22:12:20 [restartedMain] INFO  : Finished Spring Data repository scanning in 133 ms. Found 3 JPA repository interfaces.
+2024-09-10 22:12:20 [restartedMain] INFO  : Tomcat initialized with port 5555 (http)
+2024-09-10 22:12:20 [restartedMain] INFO  : Starting service [Tomcat]
+2024-09-10 22:12:20 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 22:12:20 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-09-10 22:12:20 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 1594 ms
+2024-09-10 22:12:20 [restartedMain] INFO  : HikariPool-4 - Starting...
+2024-09-10 22:12:20 [restartedMain] INFO  : HikariPool-4 - Added connection conn50: url=jdbc:h2:mem:testdb user=SA
+2024-09-10 22:12:20 [restartedMain] INFO  : HikariPool-4 - Start completed.
+2024-09-10 22:12:20 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-10 22:12:20 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 22:12:20 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-09-10 22:12:20 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 22:12:21 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 22:12:21 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:12:21 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 22:12:22 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-09-10 22:12:22 [restartedMain] INFO  : Tomcat started on port 5555 (http) with context path '/'
+2024-09-10 22:12:22 [restartedMain] INFO  : Started SpringDataRestH2DemoApplication in 3.452 seconds (process running for 5024.203)
+2024-09-10 22:12:22 [restartedMain] INFO  : Condition evaluation unchanged
+2024-09-10 22:12:22 [restartedMain] INFO  : heelo this is log!!
+2024-09-10 22:12:23 [File Watcher] INFO  : Restarting due to 5 class path changes (5 additions, 0 deletions, 0 modifications)
+2024-09-10 22:12:24 [Thread-16] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:12:24 [Thread-16] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-10 22:12:24 [Thread-16] INFO  : HikariPool-4 - Shutdown initiated...
+2024-09-10 22:12:24 [Thread-16] INFO  : HikariPool-4 - Shutdown completed.
+2024-09-10 22:12:24 [restartedMain] INFO  : Starting SpringDataRestH2DemoApplication using Java 17.0.8 with PID 29316 (D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo)
+2024-09-10 22:12:24 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-09-10 22:12:24 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 22:12:24 [restartedMain] INFO  : Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
+2024-09-10 22:12:24 [restartedMain] INFO  : Tomcat initialized with port 5555 (http)
+2024-09-10 22:12:24 [restartedMain] INFO  : Starting service [Tomcat]
+2024-09-10 22:12:24 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 22:12:24 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-09-10 22:12:24 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 455 ms
+2024-09-10 22:12:24 [restartedMain] INFO  : HikariPool-5 - Starting...
+2024-09-10 22:12:24 [restartedMain] INFO  : HikariPool-5 - Added connection conn60: url=jdbc:h2:mem:testdb user=SA
+2024-09-10 22:12:24 [restartedMain] INFO  : HikariPool-5 - Start completed.
+2024-09-10 22:12:24 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-10 22:12:24 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 22:12:24 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-09-10 22:12:24 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 22:12:24 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 22:12:24 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:12:24 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 22:12:26 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-09-10 22:12:26 [restartedMain] INFO  : Tomcat started on port 5555 (http) with context path '/'
+2024-09-10 22:12:26 [restartedMain] INFO  : Started SpringDataRestH2DemoApplication in 1.949 seconds (process running for 5027.712)
+2024-09-10 22:12:26 [restartedMain] INFO  : Condition evaluation unchanged
+2024-09-10 22:12:26 [restartedMain] INFO  : heelo this is log!!
+2024-09-10 22:12:54 [File Watcher] INFO  : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-09-10 22:12:54 [Thread-20] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:12:54 [Thread-20] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-10 22:12:54 [Thread-20] INFO  : HikariPool-5 - Shutdown initiated...
+2024-09-10 22:12:54 [Thread-20] INFO  : HikariPool-5 - Shutdown completed.
+2024-09-10 22:12:54 [restartedMain] INFO  : Starting SpringDataRestH2DemoApplication using Java 17.0.8 with PID 29316 (D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo)
+2024-09-10 22:12:54 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-09-10 22:12:55 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 22:12:55 [restartedMain] INFO  : Finished Spring Data repository scanning in 12 ms. Found 3 JPA repository interfaces.
+2024-09-10 22:12:55 [restartedMain] INFO  : Tomcat initialized with port 5555 (http)
+2024-09-10 22:12:55 [restartedMain] INFO  : Starting service [Tomcat]
+2024-09-10 22:12:55 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 22:12:55 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-09-10 22:12:55 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 309 ms
+2024-09-10 22:12:55 [restartedMain] INFO  : HikariPool-6 - Starting...
+2024-09-10 22:12:55 [restartedMain] INFO  : HikariPool-6 - Added connection conn70: url=jdbc:h2:mem:testdb user=SA
+2024-09-10 22:12:55 [restartedMain] INFO  : HikariPool-6 - Start completed.
+2024-09-10 22:12:55 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-10 22:12:55 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 22:12:55 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-09-10 22:12:55 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 22:12:55 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 22:12:55 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:12:55 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 22:12:55 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-09-10 22:12:55 [restartedMain] INFO  : Tomcat started on port 5555 (http) with context path '/'
+2024-09-10 22:12:55 [restartedMain] INFO  : Started SpringDataRestH2DemoApplication in 1.039 seconds (process running for 5057.628)
+2024-09-10 22:12:55 [restartedMain] INFO  : Condition evaluation unchanged
+2024-09-10 22:12:55 [restartedMain] INFO  : heelo this is log!!
+2024-09-10 22:13:28 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-10 22:13:28 [Thread-24] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:13:28 [Thread-24] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-10 22:13:28 [Thread-24] INFO  : HikariPool-6 - Shutdown initiated...
+2024-09-10 22:13:28 [Thread-24] INFO  : HikariPool-6 - Shutdown completed.
+2024-09-10 22:13:28 [restartedMain] INFO  : Starting SpringDataRestH2DemoApplication using Java 17.0.8 with PID 29316 (D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo)
+2024-09-10 22:13:28 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-09-10 22:13:29 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 22:13:29 [restartedMain] INFO  : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2024-09-10 22:13:29 [restartedMain] INFO  : Tomcat initialized with port 5555 (http)
+2024-09-10 22:13:29 [restartedMain] INFO  : Starting service [Tomcat]
+2024-09-10 22:13:29 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 22:13:29 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-09-10 22:13:29 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 248 ms
+2024-09-10 22:13:29 [restartedMain] INFO  : HikariPool-7 - Starting...
+2024-09-10 22:13:29 [restartedMain] INFO  : HikariPool-7 - Added connection conn80: url=jdbc:h2:mem:testdb user=SA
+2024-09-10 22:13:29 [restartedMain] INFO  : HikariPool-7 - Start completed.
+2024-09-10 22:13:29 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-10 22:13:29 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 22:13:29 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-09-10 22:13:29 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 22:13:29 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 22:13:29 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:13:29 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 22:13:29 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-09-10 22:13:29 [restartedMain] INFO  : Tomcat started on port 5555 (http) with context path '/'
+2024-09-10 22:13:29 [restartedMain] INFO  : Started SpringDataRestH2DemoApplication in 0.875 seconds (process running for 5091.475)
+2024-09-10 22:13:29 [restartedMain] INFO  : Condition evaluation unchanged
+2024-09-10 22:13:29 [restartedMain] INFO  : heelo this is log!!
+2024-09-10 22:17:51 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-10 22:17:51 [Thread-28] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:17:51 [Thread-28] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-10 22:17:51 [Thread-28] INFO  : HikariPool-7 - Shutdown initiated...
+2024-09-10 22:17:51 [Thread-28] INFO  : HikariPool-7 - Shutdown completed.
+2024-09-10 22:17:51 [restartedMain] INFO  : Starting SpringDataRestH2DemoApplication using Java 17.0.8 with PID 29316 (D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo)
+2024-09-10 22:17:51 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-09-10 22:17:51 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 22:17:51 [restartedMain] INFO  : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2024-09-10 22:17:51 [restartedMain] INFO  : Tomcat initialized with port 5555 (http)
+2024-09-10 22:17:51 [restartedMain] INFO  : Starting service [Tomcat]
+2024-09-10 22:17:51 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 22:17:51 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-09-10 22:17:51 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 670 ms
+2024-09-10 22:17:52 [restartedMain] INFO  : HikariPool-8 - Starting...
+2024-09-10 22:17:52 [restartedMain] INFO  : HikariPool-8 - Added connection conn90: url=jdbc:h2:mem:testdb user=SA
+2024-09-10 22:17:52 [restartedMain] INFO  : HikariPool-8 - Start completed.
+2024-09-10 22:17:52 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-10 22:17:52 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 22:17:52 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-09-10 22:17:52 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 22:17:52 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 22:17:52 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:17:52 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 22:17:53 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-09-10 22:17:53 [restartedMain] INFO  : Tomcat started on port 5555 (http) with context path '/'
+2024-09-10 22:17:53 [restartedMain] INFO  : Started SpringDataRestH2DemoApplication in 2.634 seconds (process running for 5355.559)
+2024-09-10 22:17:53 [restartedMain] INFO  : Condition evaluation unchanged
+2024-09-10 22:17:53 [restartedMain] INFO  : heelo this is log!!
+2024-09-10 22:19:57 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-10 22:19:57 [Thread-32] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:19:57 [Thread-32] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-10 22:19:57 [Thread-32] INFO  : HikariPool-8 - Shutdown initiated...
+2024-09-10 22:19:57 [Thread-32] INFO  : HikariPool-8 - Shutdown completed.
+2024-09-10 22:19:57 [restartedMain] INFO  : Starting SpringDataRestH2DemoApplication using Java 17.0.8 with PID 29316 (D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo)
+2024-09-10 22:19:57 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-09-10 22:19:57 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 22:19:57 [restartedMain] INFO  : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2024-09-10 22:19:57 [restartedMain] INFO  : Tomcat initialized with port 5555 (http)
+2024-09-10 22:19:57 [restartedMain] INFO  : Starting service [Tomcat]
+2024-09-10 22:19:57 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 22:19:57 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-09-10 22:19:57 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 241 ms
+2024-09-10 22:19:57 [restartedMain] INFO  : HikariPool-9 - Starting...
+2024-09-10 22:19:57 [restartedMain] INFO  : HikariPool-9 - Added connection conn100: url=jdbc:h2:mem:testdb user=SA
+2024-09-10 22:19:57 [restartedMain] INFO  : HikariPool-9 - Start completed.
+2024-09-10 22:19:57 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-10 22:19:57 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 22:19:57 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-09-10 22:19:57 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 22:19:57 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 22:19:57 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:19:57 [restartedMain] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loggingAspect' defined in file [D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes\com\demo\spring_data_rest_h2_demo\LoggingAspect.class]: Failed to instantiate [com.demo.spring_data_rest_h2_demo.LoggingAspect]: Constructor threw exception
+2024-09-10 22:19:57 [restartedMain] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:19:57 [restartedMain] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-10 22:19:57 [restartedMain] INFO  : HikariPool-9 - Shutdown initiated...
+2024-09-10 22:19:57 [restartedMain] INFO  : HikariPool-9 - Shutdown completed.
+2024-09-10 22:19:57 [restartedMain] INFO  : Stopping service [Tomcat]
+2024-09-10 22:19:57 [restartedMain] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-10 22:19:57 [restartedMain] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loggingAspect' defined in file [D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes\com\demo\spring_data_rest_h2_demo\LoggingAspect.class]: Failed to instantiate [com.demo.spring_data_rest_h2_demo.LoggingAspect]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.demo.spring_data_rest_h2_demo.SpringDataRestH2DemoApplication.main(SpringDataRestH2DemoApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.demo.spring_data_rest_h2_demo.LoggingAspect]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:94)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1331)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token "@", delete this token
+	POint cannot be resolved to a variable
+
+	at com.demo.spring_data_rest_h2_demo.LoggingAspect.<init>(LoggingAspect.java:23)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	... 24 common frames omitted
+2024-09-10 22:20:55 [restartedMain] INFO  : Starting SpringDataRestH2DemoApplication using Java 17.0.8 with PID 29316 (D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo)
+2024-09-10 22:20:55 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-09-10 22:20:55 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 22:20:55 [restartedMain] INFO  : Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2024-09-10 22:20:56 [restartedMain] INFO  : Tomcat initialized with port 5555 (http)
+2024-09-10 22:20:56 [restartedMain] INFO  : Starting service [Tomcat]
+2024-09-10 22:20:56 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 22:20:56 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-09-10 22:20:56 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 300 ms
+2024-09-10 22:20:56 [restartedMain] INFO  : HikariPool-10 - Starting...
+2024-09-10 22:20:56 [restartedMain] INFO  : HikariPool-10 - Added connection conn101: url=jdbc:h2:mem:testdb user=SA
+2024-09-10 22:20:56 [restartedMain] INFO  : HikariPool-10 - Start completed.
+2024-09-10 22:20:56 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-10 22:20:56 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 22:20:56 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-09-10 22:20:56 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 22:20:56 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 22:20:56 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:20:56 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 22:20:57 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-09-10 22:20:57 [restartedMain] INFO  : Tomcat started on port 5555 (http) with context path '/'
+2024-09-10 22:20:57 [restartedMain] INFO  : Started SpringDataRestH2DemoApplication in 1.659 seconds (process running for 5539.153)
+2024-09-10 22:20:57 [restartedMain] INFO  : Condition evaluation unchanged
+2024-09-10 22:20:57 [restartedMain] INFO  : heelo this is log!!
+2024-09-10 22:22:57 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-10 22:22:57 [Thread-36] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:22:57 [Thread-36] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-10 22:22:57 [Thread-36] INFO  : HikariPool-10 - Shutdown initiated...
+2024-09-10 22:22:57 [Thread-36] INFO  : HikariPool-10 - Shutdown completed.
+2024-09-10 22:22:57 [restartedMain] INFO  : Starting SpringDataRestH2DemoApplication using Java 17.0.8 with PID 29316 (D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\spring-data-rest-h2-demo.zip_expanded\spring-data-rest-h2-demo)
+2024-09-10 22:22:57 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-09-10 22:22:57 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-10 22:22:57 [restartedMain] INFO  : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2024-09-10 22:22:58 [restartedMain] INFO  : Tomcat initialized with port 5555 (http)
+2024-09-10 22:22:58 [restartedMain] INFO  : Starting service [Tomcat]
+2024-09-10 22:22:58 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10 22:22:58 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-09-10 22:22:58 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 327 ms
+2024-09-10 22:22:58 [restartedMain] INFO  : HikariPool-11 - Starting...
+2024-09-10 22:22:58 [restartedMain] INFO  : HikariPool-11 - Added connection conn111: url=jdbc:h2:mem:testdb user=SA
+2024-09-10 22:22:58 [restartedMain] INFO  : HikariPool-11 - Start completed.
+2024-09-10 22:22:58 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-09-10 22:22:58 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-10 22:22:58 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-09-10 22:22:58 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-10 22:22:58 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-10 22:22:58 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-10 22:22:58 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-10 22:22:59 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-09-10 22:22:59 [restartedMain] INFO  : Tomcat started on port 5555 (http) with context path '/'
+2024-09-10 22:22:59 [restartedMain] INFO  : Started SpringDataRestH2DemoApplication in 1.665 seconds (process running for 5661.073)
+2024-09-10 22:22:59 [restartedMain] INFO  : Condition evaluation unchanged
+2024-09-10 22:22:59 [restartedMain] INFO  : heelo this is log!!
+2024-09-10 22:23:31 [http-nio-5555-exec-1] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-10 22:23:31 [http-nio-5555-exec-1] INFO  : Initializing Servlet 'dispatcherServlet'
+2024-09-10 22:23:31 [http-nio-5555-exec-1] INFO  : Completed initialization in 2 ms

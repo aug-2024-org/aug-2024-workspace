@@ -19,7 +19,12 @@ import lombok.NoArgsConstructor;
 @Entity 
 public class UserLogin{
 	@Id
-	private int loginId;
+	private int id;
 	private String username;
 	private String password;
+	
+	@OneToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="loginId")
+	@MapsId
+	private UserInfo userIn;
 }

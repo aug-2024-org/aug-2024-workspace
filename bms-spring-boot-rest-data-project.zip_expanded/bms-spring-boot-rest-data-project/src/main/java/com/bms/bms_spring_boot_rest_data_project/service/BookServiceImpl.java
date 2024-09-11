@@ -113,7 +113,7 @@ public class BookServiceImpl implements BookService{
 
 	@Override
 	public List<BookPojo> fetchByBookGenre(String bookGenre) {
-		return bookDao.findByBookGenre(bookGenre);
+		return bookDao.findByProjectionBookGenre(bookGenre);
 	}
 
 }

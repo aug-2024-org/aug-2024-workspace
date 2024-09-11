@@ -18,6 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.bms.bms_spring_boot_rest_data_project.pojo.BookPojo;
 import com.bms.bms_spring_boot_rest_data_project.service.BookService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/api")
 public class BookController {
@@ -44,7 +46,7 @@ public class BookController {
 	}
 	
 	@PostMapping("/books")
-	public ResponseEntity<BookPojo> addBook(@RequestBody BookPojo newBook){
+	public ResponseEntity<BookPojo> addBook(@Valid @RequestBody BookPojo newBook){
 		BookPojo returnedBook = bookService.addBook(newBook);
 		return new ResponseEntity<BookPojo>(returnedBook, HttpStatus.CREATED);
 	}
@@ -60,4 +62,6 @@ public class BookController {
 		bookService.deleteBook(bookId);
 		return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
 	}
+	
+	
 }
