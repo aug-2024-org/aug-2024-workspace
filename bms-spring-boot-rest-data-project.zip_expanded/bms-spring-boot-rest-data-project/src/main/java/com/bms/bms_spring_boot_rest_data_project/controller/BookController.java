@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,6 +30,7 @@ public class BookController {
 	@Autowired
 	BookService bookService;
 	
+	@PreAuthorize("hasAuthority('ROLE_ADMIN')")
 	@GetMapping("/books")
 	public ResponseEntity<Collection<BookPojo>> fetchAllBooks(){
 		Collection<BookPojo> allBooks = bookService.fetchAllBooks();
@@ -36,11 +38,13 @@ public class BookController {
 	}
 	
 	@GetMapping("/books/{bid}")
+	@PreAuthorize("hasAuthority('ROLE_USER')")
 	public ResponseEntity<BookPojo> fetchABook(@PathVariable("bid") int bookId) {
 		BookPojo fetchedBook = bookService.fetchABook(bookId);
 		return new ResponseEntity<BookPojo>(fetchedBook, HttpStatus.OK);
 	}
 	
+	@PreAuthorize("hasAuthority('ROLE_ADMIN')")
 	@GetMapping("/books/genre/{genre}")
 	public ResponseEntity<List<BookPojo>> fetchBookByGenre(@PathVariable("genre") String bookGenre) {
 		List<BookPojo> allFetchedBook = bookService.fetchByBookGenre(bookGenre);
