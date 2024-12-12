@@ -1,5 +1,776 @@
-2024-09-16 03:00:26 [HikariPool-1 housekeeper] WARN  : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h16m44s354ms255µs).
-2024-09-16 06:15:06 [HikariPool-1 housekeeper] WARN  : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h5m8s852ms732µs).
-2024-09-16 06:54:06 [HikariPool-1 housekeeper] WARN  : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m29s439ms306µs100ns).
-2024-09-16 07:27:26 [HikariPool-1 housekeeper] WARN  : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m19s511ms979µs200ns).
-2024-09-16 08:21:57 [HikariPool-1 housekeeper] WARN  : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m731ms358µs).
+2024-12-11 13:37:55 [background-preinit] INFO  : HV000001: Hibernate Validator 8.0.1.Final
+2024-12-11 13:37:55 [restartedMain] INFO  : Starting BmsSpringBootRestDataProjectApplication using Java 17.0.8 with PID 35376 (D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project)
+2024-12-11 13:37:55 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-12-11 13:37:56 [restartedMain] INFO  : The Class-Path manifest attribute in C:\Users\Poongs\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Poongs/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-12-11 13:37:56 [restartedMain] INFO  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-11 13:37:56 [restartedMain] INFO  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-11 13:37:59 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11 13:37:59 [restartedMain] INFO  : Finished Spring Data repository scanning in 143 ms. Found 3 JPA repository interfaces.
+2024-12-11 13:38:02 [restartedMain] INFO  : Tomcat initialized with port 7777 (http)
+2024-12-11 13:38:02 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-7777"]
+2024-12-11 13:38:02 [restartedMain] INFO  : Starting service [Tomcat]
+2024-12-11 13:38:02 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-12-11 13:38:02 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-12-11 13:38:02 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 6340 ms
+2024-12-11 13:38:03 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-11 13:38:03 [restartedMain] INFO  : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-12-11 13:38:03 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-12-11 13:38:04 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-11 13:38:04 [restartedMain] INFO  : HikariPool-1 - Starting...
+2024-12-11 13:38:06 [restartedMain] WARN  : HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:290)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1705)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1454)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4414)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.bms.bms_spring_boot_rest_data_project.BmsSpringBootRestDataProjectApplication.main(BmsSpringBootRestDataProjectApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2024-12-11 13:38:06 [restartedMain] ERROR : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2024-12-11 13:38:06 [restartedMain] ERROR : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthFilter': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'userInfoUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userInfoDao': Error creating bean with name 'userInfoDao' defined in com.bms.bms_spring_boot_rest_data_project.dao.UserInfoDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+2024-12-11 13:38:06 [restartedMain] INFO  : Stopping service [Tomcat]
+2024-12-11 13:38:06 [restartedMain] WARN  : The web application [ROOT] appears to have started a thread named [oracle.jdbc.driver.BlockSource.ThreadedCachingBlockSource.BlockReleaser] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ app//oracle.jdbc.internal.Monitor$WaitableMonitor.monitorWait(Monitor.java:258)
+ app//oracle.jdbc.internal.Monitor$WaitableMonitor.monitorWait(Monitor.java:240)
+ app//oracle.jdbc.driver.BlockSource$ThreadedCachingBlockSource$BlockReleaser.run(BlockSource.java:345)
+2024-12-11 13:38:06 [restartedMain] WARN  : The web application [ROOT] appears to have started a thread named [InterruptTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8/java.lang.Object.wait(Native Method)
+ java.base@17.0.8/java.lang.Object.wait(Object.java:338)
+ java.base@17.0.8/java.util.TimerThread.mainLoop(Timer.java:537)
+ java.base@17.0.8/java.util.TimerThread.run(Timer.java:516)
+2024-12-11 13:38:06 [restartedMain] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-12-11 13:38:06 [restartedMain] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-11 13:38:06 [restartedMain] ERROR : Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.bms.bms_spring_boot_rest_data_project.BmsSpringBootRestDataProjectApplication.main(BmsSpringBootRestDataProjectApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthFilter': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'userInfoUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userInfoDao': Error creating bean with name 'userInfoDao' defined in com.bms.bms_spring_boot_rest_data_project.dao.UserInfoDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4414)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128)
+	... 18 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userInfoUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userInfoDao': Error creating bean with name 'userInfoDao' defined in com.bms.bms_spring_boot_rest_data_project.dao.UserInfoDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 60 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoDao' defined in com.bms.bms_spring_boot_rest_data_project.dao.UserInfoDao defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1705)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1454)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 74 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaSharedEM_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 87 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 99 common frames omitted
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 106 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:152)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:362)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 121 common frames omitted
+2024-12-11 13:43:15 [background-preinit] INFO  : HV000001: Hibernate Validator 8.0.1.Final
+2024-12-11 13:43:16 [restartedMain] INFO  : Starting BmsSpringBootRestDataProjectApplication using Java 17.0.8 with PID 21924 (D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project)
+2024-12-11 13:43:16 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-12-11 13:43:16 [restartedMain] INFO  : The Class-Path manifest attribute in C:\Users\Poongs\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Poongs/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-12-11 13:43:16 [restartedMain] INFO  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-11 13:43:16 [restartedMain] INFO  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-11 13:43:18 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11 13:43:19 [restartedMain] INFO  : Finished Spring Data repository scanning in 190 ms. Found 3 JPA repository interfaces.
+2024-12-11 13:43:21 [restartedMain] INFO  : Tomcat initialized with port 7777 (http)
+2024-12-11 13:43:21 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-7777"]
+2024-12-11 13:43:21 [restartedMain] INFO  : Starting service [Tomcat]
+2024-12-11 13:43:21 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-12-11 13:43:21 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-12-11 13:43:21 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 5717 ms
+2024-12-11 13:43:22 [restartedMain] INFO  : HikariPool-1 - Starting...
+2024-12-11 13:43:22 [restartedMain] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-11 13:43:22 [restartedMain] INFO  : HikariPool-1 - Start completed.
+2024-12-11 13:43:22 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-11 13:43:23 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-11 13:43:23 [restartedMain] INFO  : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-12-11 13:43:23 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-12-11 13:43:24 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-11 13:43:26 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-11 13:43:28 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 13:43:29 [restartedMain] INFO  : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-11 13:43:29 [restartedMain] WARN  : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-11 13:43:30 [restartedMain] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-11 13:43:31 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-11 13:43:36 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-12-11 13:43:36 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-7777"]
+2024-12-11 13:43:36 [restartedMain] INFO  : Tomcat started on port 7777 (http) with context path '/'
+2024-12-11 13:43:36 [restartedMain] INFO  : Started BmsSpringBootRestDataProjectApplication in 21.771 seconds (process running for 22.627)
+2024-12-11 14:16:58 [http-nio-7777-exec-3] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-11 14:16:58 [http-nio-7777-exec-3] INFO  : Initializing Servlet 'dispatcherServlet'
+2024-12-11 14:16:58 [http-nio-7777-exec-3] INFO  : Completed initialization in 99 ms
+2024-12-11 14:23:06 [background-preinit] INFO  : HV000001: Hibernate Validator 8.0.1.Final
+2024-12-11 14:23:06 [restartedMain] INFO  : Starting BmsSpringBootRestDataProjectApplication using Java 17.0.8 with PID 3328 (D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project)
+2024-12-11 14:23:06 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-12-11 14:23:06 [restartedMain] INFO  : The Class-Path manifest attribute in C:\Users\Poongs\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Poongs/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-12-11 14:23:06 [restartedMain] INFO  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-11 14:23:06 [restartedMain] INFO  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-11 14:23:09 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11 14:23:09 [restartedMain] INFO  : Finished Spring Data repository scanning in 201 ms. Found 3 JPA repository interfaces.
+2024-12-11 14:23:12 [restartedMain] INFO  : Tomcat initialized with port 7777 (http)
+2024-12-11 14:23:12 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-7777"]
+2024-12-11 14:23:12 [restartedMain] INFO  : Starting service [Tomcat]
+2024-12-11 14:23:12 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-12-11 14:23:12 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-12-11 14:23:12 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 5897 ms
+2024-12-11 14:23:13 [restartedMain] INFO  : HikariPool-1 - Starting...
+2024-12-11 14:23:13 [restartedMain] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-11 14:23:13 [restartedMain] INFO  : HikariPool-1 - Start completed.
+2024-12-11 14:23:13 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-11 14:23:14 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-11 14:23:15 [restartedMain] INFO  : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-12-11 14:23:15 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-12-11 14:23:16 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-11 14:23:19 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-11 14:23:20 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 14:23:21 [restartedMain] INFO  : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-11 14:23:21 [restartedMain] WARN  : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-11 14:23:22 [restartedMain] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-11 14:23:23 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-11 14:23:28 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-12-11 14:23:28 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-7777"]
+2024-12-11 14:23:28 [restartedMain] INFO  : Tomcat started on port 7777 (http) with context path '/'
+2024-12-11 14:23:28 [restartedMain] INFO  : Started BmsSpringBootRestDataProjectApplication in 25.156 seconds (process running for 27.033)
+2024-12-11 14:23:39 [http-nio-7777-exec-1] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-11 14:23:39 [http-nio-7777-exec-1] INFO  : Initializing Servlet 'dispatcherServlet'
+2024-12-11 14:23:39 [http-nio-7777-exec-1] INFO  : Completed initialization in 2 ms
+2024-12-11 14:25:18 [http-nio-7777-exec-5] WARN  : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-12-11 14:28:58 [background-preinit] INFO  : HV000001: Hibernate Validator 8.0.1.Final
+2024-12-11 14:28:58 [restartedMain] INFO  : Starting BmsSpringBootRestDataProjectApplication using Java 17.0.8 with PID 42296 (D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project)
+2024-12-11 14:28:58 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-12-11 14:28:58 [restartedMain] INFO  : The Class-Path manifest attribute in C:\Users\Poongs\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Poongs/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-12-11 14:28:58 [restartedMain] INFO  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-11 14:28:58 [restartedMain] INFO  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-11 14:29:01 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11 14:29:01 [restartedMain] INFO  : Finished Spring Data repository scanning in 153 ms. Found 3 JPA repository interfaces.
+2024-12-11 14:29:04 [restartedMain] INFO  : Tomcat initialized with port 7777 (http)
+2024-12-11 14:29:04 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-7777"]
+2024-12-11 14:29:04 [restartedMain] INFO  : Starting service [Tomcat]
+2024-12-11 14:29:04 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-12-11 14:29:05 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-12-11 14:29:05 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 6329 ms
+2024-12-11 14:29:05 [restartedMain] INFO  : HikariPool-1 - Starting...
+2024-12-11 14:29:06 [restartedMain] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-11 14:29:06 [restartedMain] INFO  : HikariPool-1 - Start completed.
+2024-12-11 14:29:06 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-11 14:29:07 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-11 14:29:07 [restartedMain] INFO  : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-12-11 14:29:07 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-12-11 14:29:08 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-11 14:29:12 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-11 14:29:13 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 14:29:16 [restartedMain] INFO  : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-11 14:29:16 [restartedMain] WARN  : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-11 14:29:17 [restartedMain] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-11 14:29:18 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-11 14:29:23 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-12-11 14:29:23 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-7777"]
+2024-12-11 14:29:24 [restartedMain] INFO  : Tomcat started on port 7777 (http) with context path '/'
+2024-12-11 14:29:24 [restartedMain] INFO  : Started BmsSpringBootRestDataProjectApplication in 27.453 seconds (process running for 28.959)
+2024-12-11 14:29:31 [http-nio-7777-exec-2] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-11 14:29:31 [http-nio-7777-exec-2] INFO  : Initializing Servlet 'dispatcherServlet'
+2024-12-11 14:29:31 [http-nio-7777-exec-2] INFO  : Completed initialization in 5 ms
+2024-12-11 14:31:20 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-11 14:31:20 [Thread-5] INFO  : Stopping ProtocolHandler ["http-nio-7777"]
+2024-12-11 14:31:29 [background-preinit] INFO  : HV000001: Hibernate Validator 8.0.1.Final
+2024-12-11 14:31:29 [restartedMain] INFO  : Starting BmsSpringBootRestDataProjectApplication using Java 17.0.8 with PID 15332 (D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project)
+2024-12-11 14:31:29 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-12-11 14:31:29 [restartedMain] INFO  : The Class-Path manifest attribute in C:\Users\Poongs\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Poongs/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-12-11 14:31:29 [restartedMain] INFO  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-11 14:31:29 [restartedMain] INFO  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-11 14:31:32 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11 14:31:32 [restartedMain] INFO  : Finished Spring Data repository scanning in 155 ms. Found 3 JPA repository interfaces.
+2024-12-11 14:31:35 [restartedMain] INFO  : Tomcat initialized with port 7777 (http)
+2024-12-11 14:31:35 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-7777"]
+2024-12-11 14:31:35 [restartedMain] INFO  : Starting service [Tomcat]
+2024-12-11 14:31:35 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-12-11 14:31:35 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-12-11 14:31:35 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 5593 ms
+2024-12-11 14:31:35 [restartedMain] INFO  : HikariPool-1 - Starting...
+2024-12-11 14:31:36 [restartedMain] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-11 14:31:36 [restartedMain] INFO  : HikariPool-1 - Start completed.
+2024-12-11 14:31:36 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-11 14:31:37 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-11 14:31:37 [restartedMain] INFO  : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-12-11 14:31:37 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-12-11 14:31:38 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-11 14:31:41 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-11 14:31:41 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 14:31:43 [restartedMain] INFO  : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-11 14:31:43 [restartedMain] WARN  : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-11 14:31:44 [restartedMain] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-11 14:31:45 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-11 14:31:49 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-12-11 14:31:49 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-7777"]
+2024-12-11 14:31:49 [restartedMain] INFO  : Tomcat started on port 7777 (http) with context path '/'
+2024-12-11 14:31:49 [restartedMain] INFO  : Started BmsSpringBootRestDataProjectApplication in 21.318 seconds (process running for 22.133)
+2024-12-11 14:31:58 [http-nio-7777-exec-4] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-11 14:31:58 [http-nio-7777-exec-4] INFO  : Initializing Servlet 'dispatcherServlet'
+2024-12-11 14:31:58 [http-nio-7777-exec-4] INFO  : Completed initialization in 5 ms
+2024-12-11 14:43:38 [http-nio-7777-exec-1] WARN  : Encoded password does not look like BCrypt
+2024-12-11 14:44:02 [http-nio-7777-exec-2] WARN  : Encoded password does not look like BCrypt
+2024-12-11 15:41:54 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-11 15:41:55 [Thread-5] INFO  : Stopping ProtocolHandler ["http-nio-7777"]
+2024-12-11 15:41:55 [Thread-5] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 15:41:55 [Thread-5] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-11 15:41:55 [Thread-5] INFO  : HikariPool-1 - Shutdown initiated...
+2024-12-11 15:41:55 [Thread-5] INFO  : HikariPool-1 - Shutdown completed.
+2024-12-11 15:41:58 [restartedMain] INFO  : Starting BmsSpringBootRestDataProjectApplication using Java 17.0.8 with PID 15332 (D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project)
+2024-12-11 15:41:58 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-12-11 15:41:59 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11 15:42:00 [restartedMain] INFO  : Finished Spring Data repository scanning in 69 ms. Found 3 JPA repository interfaces.
+2024-12-11 15:42:01 [restartedMain] INFO  : Tomcat initialized with port 7777 (http)
+2024-12-11 15:42:01 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-7777"]
+2024-12-11 15:42:01 [restartedMain] INFO  : Starting service [Tomcat]
+2024-12-11 15:42:01 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-12-11 15:42:01 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-12-11 15:42:01 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 2736 ms
+2024-12-11 15:42:01 [restartedMain] INFO  : HikariPool-2 - Starting...
+2024-12-11 15:42:01 [restartedMain] INFO  : HikariPool-2 - Added connection conn32: url=jdbc:h2:mem:testdb user=SA
+2024-12-11 15:42:01 [restartedMain] INFO  : HikariPool-2 - Start completed.
+2024-12-11 15:42:01 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-11 15:42:01 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-11 15:42:02 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-12-11 15:42:02 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-11 15:42:02 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-11 15:42:02 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 15:42:03 [restartedMain] INFO  : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-11 15:42:03 [restartedMain] WARN  : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-11 15:42:04 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-11 15:42:08 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-12-11 15:42:08 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-7777"]
+2024-12-11 15:42:08 [restartedMain] INFO  : Tomcat started on port 7777 (http) with context path '/'
+2024-12-11 15:42:08 [restartedMain] INFO  : Started BmsSpringBootRestDataProjectApplication in 10.366 seconds (process running for 4240.965)
+2024-12-11 15:42:08 [restartedMain] INFO  : Condition evaluation unchanged
+2024-12-11 15:42:13 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-11 15:42:13 [Thread-7] INFO  : Stopping ProtocolHandler ["http-nio-7777"]
+2024-12-11 15:42:13 [Thread-7] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 15:42:13 [Thread-7] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-11 15:42:13 [Thread-7] INFO  : HikariPool-2 - Shutdown initiated...
+2024-12-11 15:42:13 [Thread-7] INFO  : HikariPool-2 - Shutdown completed.
+2024-12-11 15:42:13 [restartedMain] INFO  : Starting BmsSpringBootRestDataProjectApplication using Java 17.0.8 with PID 15332 (D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project)
+2024-12-11 15:42:13 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-12-11 15:42:14 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11 15:42:14 [restartedMain] INFO  : Finished Spring Data repository scanning in 36 ms. Found 3 JPA repository interfaces.
+2024-12-11 15:42:14 [restartedMain] INFO  : Tomcat initialized with port 7777 (http)
+2024-12-11 15:42:14 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-7777"]
+2024-12-11 15:42:14 [restartedMain] INFO  : Starting service [Tomcat]
+2024-12-11 15:42:14 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-12-11 15:42:14 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-12-11 15:42:14 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 864 ms
+2024-12-11 15:42:14 [restartedMain] INFO  : HikariPool-3 - Starting...
+2024-12-11 15:42:14 [restartedMain] INFO  : HikariPool-3 - Added connection conn42: url=jdbc:h2:mem:testdb user=SA
+2024-12-11 15:42:14 [restartedMain] INFO  : HikariPool-3 - Start completed.
+2024-12-11 15:42:14 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-11 15:42:14 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-11 15:42:14 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-12-11 15:42:14 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-11 15:42:15 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-11 15:42:15 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 15:42:15 [restartedMain] INFO  : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-11 15:42:15 [restartedMain] WARN  : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-11 15:42:15 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-11 15:42:17 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-12-11 15:42:17 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-7777"]
+2024-12-11 15:42:17 [restartedMain] INFO  : Tomcat started on port 7777 (http) with context path '/'
+2024-12-11 15:42:17 [restartedMain] INFO  : Started BmsSpringBootRestDataProjectApplication in 3.619 seconds (process running for 4249.637)
+2024-12-11 15:42:17 [restartedMain] INFO  : Condition evaluation unchanged
+2024-12-11 16:25:28 [background-preinit] INFO  : HV000001: Hibernate Validator 8.0.1.Final
+2024-12-11 16:25:28 [restartedMain] INFO  : Starting BmsSpringBootRestDataProjectApplication using Java 17.0.8 with PID 27400 (D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project)
+2024-12-11 16:25:28 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-12-11 16:25:28 [restartedMain] INFO  : The Class-Path manifest attribute in C:\Users\Poongs\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Poongs/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-12-11 16:25:28 [restartedMain] INFO  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-11 16:25:28 [restartedMain] INFO  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-11 16:25:32 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11 16:25:32 [restartedMain] INFO  : Finished Spring Data repository scanning in 216 ms. Found 3 JPA repository interfaces.
+2024-12-11 16:25:36 [restartedMain] INFO  : Tomcat initialized with port 7777 (http)
+2024-12-11 16:25:36 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-7777"]
+2024-12-11 16:25:36 [restartedMain] INFO  : Starting service [Tomcat]
+2024-12-11 16:25:36 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-12-11 16:25:36 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-12-11 16:25:36 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 8123 ms
+2024-12-11 16:25:37 [restartedMain] INFO  : HikariPool-1 - Starting...
+2024-12-11 16:25:38 [restartedMain] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-11 16:25:38 [restartedMain] INFO  : HikariPool-1 - Start completed.
+2024-12-11 16:25:38 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-11 16:25:39 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-11 16:25:39 [restartedMain] INFO  : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-12-11 16:25:39 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-12-11 16:25:41 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-11 16:25:45 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-11 16:25:46 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 16:25:48 [restartedMain] INFO  : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-11 16:25:48 [restartedMain] WARN  : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-11 16:25:49 [restartedMain] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-11 16:25:50 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-11 16:25:54 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-12-11 16:25:54 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-7777"]
+2024-12-11 16:25:54 [restartedMain] INFO  : Tomcat started on port 7777 (http) with context path '/'
+2024-12-11 16:25:54 [restartedMain] INFO  : Started BmsSpringBootRestDataProjectApplication in 27.229 seconds (process running for 27.928)
+2024-12-11 16:26:00 [http-nio-7777-exec-5] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-11 16:26:00 [http-nio-7777-exec-5] INFO  : Initializing Servlet 'dispatcherServlet'
+2024-12-11 16:26:00 [http-nio-7777-exec-5] INFO  : Completed initialization in 3 ms
+2024-12-11 16:39:19 [background-preinit] INFO  : HV000001: Hibernate Validator 8.0.1.Final
+2024-12-11 16:39:19 [restartedMain] INFO  : Starting BmsSpringBootRestDataProjectApplication using Java 17.0.8 with PID 38600 (D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project)
+2024-12-11 16:39:19 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-12-11 16:39:19 [restartedMain] INFO  : The Class-Path manifest attribute in C:\Users\Poongs\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Poongs/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-12-11 16:39:19 [restartedMain] INFO  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-11 16:39:19 [restartedMain] INFO  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-11 16:39:21 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11 16:39:21 [restartedMain] INFO  : Finished Spring Data repository scanning in 142 ms. Found 3 JPA repository interfaces.
+2024-12-11 16:39:24 [restartedMain] INFO  : Tomcat initialized with port 7777 (http)
+2024-12-11 16:39:24 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-7777"]
+2024-12-11 16:39:24 [restartedMain] INFO  : Starting service [Tomcat]
+2024-12-11 16:39:24 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-12-11 16:39:24 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-12-11 16:39:24 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 5056 ms
+2024-12-11 16:39:24 [restartedMain] INFO  : HikariPool-1 - Starting...
+2024-12-11 16:39:25 [restartedMain] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-11 16:39:25 [restartedMain] INFO  : HikariPool-1 - Start completed.
+2024-12-11 16:39:25 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-11 16:39:25 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-11 16:39:26 [restartedMain] INFO  : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-12-11 16:39:26 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-12-11 16:39:26 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-11 16:39:29 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-11 16:39:30 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 16:39:32 [restartedMain] INFO  : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-11 16:39:32 [restartedMain] WARN  : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-11 16:39:33 [restartedMain] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-11 16:39:34 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-11 16:39:39 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-12-11 16:39:39 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-7777"]
+2024-12-11 16:39:39 [restartedMain] INFO  : Tomcat started on port 7777 (http) with context path '/'
+2024-12-11 16:39:39 [restartedMain] INFO  : Started BmsSpringBootRestDataProjectApplication in 21.273 seconds (process running for 22.016)
+2024-12-11 16:43:28 [http-nio-7777-exec-6] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-11 16:43:28 [http-nio-7777-exec-6] INFO  : Initializing Servlet 'dispatcherServlet'
+2024-12-11 16:43:28 [http-nio-7777-exec-6] INFO  : Completed initialization in 4 ms
+2024-12-11 17:03:55 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-11 17:03:56 [Thread-5] INFO  : Stopping ProtocolHandler ["http-nio-7777"]
+2024-12-11 17:03:56 [Thread-5] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 17:03:56 [Thread-5] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-11 17:03:56 [Thread-5] INFO  : HikariPool-1 - Shutdown initiated...
+2024-12-11 17:03:56 [Thread-5] INFO  : HikariPool-1 - Shutdown completed.
+2024-12-11 17:03:58 [restartedMain] INFO  : Starting BmsSpringBootRestDataProjectApplication using Java 17.0.8 with PID 38600 (D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project)
+2024-12-11 17:03:58 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-12-11 17:04:00 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11 17:04:00 [restartedMain] INFO  : Finished Spring Data repository scanning in 206 ms. Found 3 JPA repository interfaces.
+2024-12-11 17:04:11 [background-preinit] INFO  : HV000001: Hibernate Validator 8.0.1.Final
+2024-12-11 17:04:11 [restartedMain] INFO  : Starting BmsSpringBootRestDataProjectApplication using Java 17.0.8 with PID 39900 (D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project)
+2024-12-11 17:04:11 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-12-11 17:04:11 [restartedMain] INFO  : The Class-Path manifest attribute in C:\Users\Poongs\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Poongs/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-12-11 17:04:11 [restartedMain] INFO  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-11 17:04:11 [restartedMain] INFO  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-11 17:04:14 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11 17:04:14 [restartedMain] INFO  : Finished Spring Data repository scanning in 175 ms. Found 3 JPA repository interfaces.
+2024-12-11 17:04:17 [restartedMain] INFO  : Tomcat initialized with port 7777 (http)
+2024-12-11 17:04:17 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-7777"]
+2024-12-11 17:04:17 [restartedMain] INFO  : Starting service [Tomcat]
+2024-12-11 17:04:17 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-12-11 17:04:17 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-12-11 17:04:17 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 5791 ms
+2024-12-11 17:04:17 [restartedMain] INFO  : HikariPool-1 - Starting...
+2024-12-11 17:04:18 [restartedMain] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-11 17:04:18 [restartedMain] INFO  : HikariPool-1 - Start completed.
+2024-12-11 17:04:18 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-11 17:04:19 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-11 17:04:19 [restartedMain] INFO  : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-12-11 17:04:19 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-12-11 17:04:21 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-11 17:04:23 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-11 17:04:24 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 17:04:26 [restartedMain] INFO  : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-11 17:04:26 [restartedMain] WARN  : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-11 17:04:26 [restartedMain] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-11 17:04:28 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-11 17:04:32 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-12-11 17:04:32 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-7777"]
+2024-12-11 17:04:32 [restartedMain] INFO  : Tomcat started on port 7777 (http) with context path '/'
+2024-12-11 17:04:33 [restartedMain] INFO  : Started BmsSpringBootRestDataProjectApplication in 22.638 seconds (process running for 23.48)
+2024-12-11 17:05:21 [http-nio-7777-exec-1] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-11 17:05:21 [http-nio-7777-exec-1] INFO  : Initializing Servlet 'dispatcherServlet'
+2024-12-11 17:05:21 [http-nio-7777-exec-1] INFO  : Completed initialization in 5 ms
+2024-12-11 17:32:15 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-11 17:32:15 [Thread-5] INFO  : Stopping ProtocolHandler ["http-nio-7777"]
+2024-12-11 17:32:15 [Thread-5] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 17:32:16 [Thread-5] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-11 17:32:16 [Thread-5] INFO  : HikariPool-1 - Shutdown initiated...
+2024-12-11 17:32:16 [Thread-5] INFO  : HikariPool-1 - Shutdown completed.
+2024-12-11 17:32:17 [restartedMain] INFO  : Starting BmsSpringBootRestDataProjectApplication using Java 17.0.8 with PID 39900 (D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project)
+2024-12-11 17:32:17 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-12-11 17:32:17 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11 17:32:17 [restartedMain] INFO  : Finished Spring Data repository scanning in 109 ms. Found 3 JPA repository interfaces.
+2024-12-11 17:32:18 [restartedMain] INFO  : Tomcat initialized with port 7777 (http)
+2024-12-11 17:32:18 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-7777"]
+2024-12-11 17:32:18 [restartedMain] INFO  : Starting service [Tomcat]
+2024-12-11 17:32:18 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-12-11 17:32:18 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-12-11 17:32:18 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 1228 ms
+2024-12-11 17:32:18 [restartedMain] INFO  : HikariPool-2 - Starting...
+2024-12-11 17:32:18 [restartedMain] INFO  : HikariPool-2 - Added connection conn11: url=jdbc:h2:mem:testdb user=SA
+2024-12-11 17:32:18 [restartedMain] INFO  : HikariPool-2 - Start completed.
+2024-12-11 17:32:18 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-11 17:32:18 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-11 17:32:18 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-12-11 17:32:18 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-11 17:32:19 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-11 17:32:19 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 17:32:21 [restartedMain] INFO  : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-11 17:32:21 [restartedMain] WARN  : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-11 17:32:21 [restartedMain] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorController' defined in file [D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes\com\bms\bms_spring_boot_rest_data_project\controller\AuthorController.class]: Failed to instantiate [com.bms.bms_spring_boot_rest_data_project.controller.AuthorController]: Constructor threw exception
+2024-12-11 17:32:21 [restartedMain] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 17:32:21 [restartedMain] WARN  : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-12-11 17:32:21 [restartedMain] INFO  : HikariPool-2 - Shutdown initiated...
+2024-12-11 17:32:22 [restartedMain] INFO  : HikariPool-2 - Shutdown completed.
+2024-12-11 17:32:22 [restartedMain] INFO  : Stopping service [Tomcat]
+2024-12-11 17:32:22 [restartedMain] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-11 17:32:22 [restartedMain] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorController' defined in file [D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes\com\bms\bms_spring_boot_rest_data_project\controller\AuthorController.class]: Failed to instantiate [com.bms.bms_spring_boot_rest_data_project.controller.AuthorController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.bms.bms_spring_boot_rest_data_project.BmsSpringBootRestDataProjectApplication.main(BmsSpringBootRestDataProjectApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.bms.bms_spring_boot_rest_data_project.controller.AuthorController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:94)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1331)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	AuthenticationManager cannot be resolved to a type
+
+	at com.bms.bms_spring_boot_rest_data_project.controller.AuthorController.<init>(AuthorController.java:30)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	... 24 common frames omitted
+2024-12-11 17:32:46 [restartedMain] INFO  : Starting BmsSpringBootRestDataProjectApplication using Java 17.0.8 with PID 39900 (D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project)
+2024-12-11 17:32:46 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-12-11 17:32:46 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11 17:32:46 [restartedMain] INFO  : Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+2024-12-11 17:32:46 [restartedMain] INFO  : Tomcat initialized with port 7777 (http)
+2024-12-11 17:32:46 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-7777"]
+2024-12-11 17:32:46 [restartedMain] INFO  : Starting service [Tomcat]
+2024-12-11 17:32:46 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-12-11 17:32:46 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-12-11 17:32:46 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 719 ms
+2024-12-11 17:32:46 [restartedMain] INFO  : HikariPool-3 - Starting...
+2024-12-11 17:32:46 [restartedMain] INFO  : HikariPool-3 - Added connection conn21: url=jdbc:h2:mem:testdb user=SA
+2024-12-11 17:32:46 [restartedMain] INFO  : HikariPool-3 - Start completed.
+2024-12-11 17:32:46 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-11 17:32:47 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-11 17:32:47 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-12-11 17:32:59 [background-preinit] INFO  : HV000001: Hibernate Validator 8.0.1.Final
+2024-12-11 17:32:59 [restartedMain] INFO  : Starting BmsSpringBootRestDataProjectApplication using Java 17.0.8 with PID 41592 (D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project\target\classes started by Poongs in D:\Poongs\eclipse-workspace\aug-2024-workspace\bms-spring-boot-rest-data-project.zip_expanded\bms-spring-boot-rest-data-project)
+2024-12-11 17:32:59 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2024-12-11 17:32:59 [restartedMain] INFO  : The Class-Path manifest attribute in C:\Users\Poongs\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Poongs/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-12-11 17:32:59 [restartedMain] INFO  : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-11 17:32:59 [restartedMain] INFO  : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-11 17:33:02 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11 17:33:02 [restartedMain] INFO  : Finished Spring Data repository scanning in 163 ms. Found 3 JPA repository interfaces.
+2024-12-11 17:33:04 [restartedMain] INFO  : Tomcat initialized with port 7777 (http)
+2024-12-11 17:33:04 [restartedMain] INFO  : Initializing ProtocolHandler ["http-nio-7777"]
+2024-12-11 17:33:04 [restartedMain] INFO  : Starting service [Tomcat]
+2024-12-11 17:33:04 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-12-11 17:33:05 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2024-12-11 17:33:05 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 5486 ms
+2024-12-11 17:33:05 [restartedMain] INFO  : HikariPool-1 - Starting...
+2024-12-11 17:33:05 [restartedMain] INFO  : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-12-11 17:33:05 [restartedMain] INFO  : HikariPool-1 - Start completed.
+2024-12-11 17:33:05 [restartedMain] INFO  : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-12-11 17:33:06 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-11 17:33:06 [restartedMain] INFO  : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-12-11 17:33:06 [restartedMain] INFO  : HHH000026: Second-level cache disabled
+2024-12-11 17:33:07 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-11 17:33:10 [restartedMain] INFO  : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-11 17:33:10 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11 17:33:12 [restartedMain] INFO  : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-11 17:33:12 [restartedMain] WARN  : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-11 17:33:13 [restartedMain] INFO  : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-11 17:33:14 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-11 17:33:18 [restartedMain] INFO  : LiveReload server is running on port 35729
+2024-12-11 17:33:18 [restartedMain] INFO  : Starting ProtocolHandler ["http-nio-7777"]
+2024-12-11 17:33:18 [restartedMain] INFO  : Tomcat started on port 7777 (http) with context path '/'
+2024-12-11 17:33:18 [restartedMain] INFO  : Started BmsSpringBootRestDataProjectApplication in 20.236 seconds (process running for 21.155)
+2024-12-11 17:33:44 [http-nio-7777-exec-5] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-11 17:33:44 [http-nio-7777-exec-5] INFO  : Initializing Servlet 'dispatcherServlet'
+2024-12-11 17:33:44 [http-nio-7777-exec-5] INFO  : Completed initialization in 2 ms

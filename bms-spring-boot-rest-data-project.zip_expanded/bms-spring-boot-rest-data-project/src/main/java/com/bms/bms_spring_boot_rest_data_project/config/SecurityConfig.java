@@ -24,9 +24,9 @@ import com.bms.bms_spring_boot_rest_data_project.filter.JwtAuthFilter;
 @EnableMethodSecurity
 public class SecurityConfig {
 
-	  @Autowired
-	    private JwtAuthFilter authFilter;
-	
+	@Autowired
+	private JwtAuthFilter authFilter;
+
 	@Bean
 //	public UserDetailsService userDetailsService(PasswordEncoder encoder) {
 	public UserDetailsService userDetailsService() {
@@ -44,34 +44,32 @@ public class SecurityConfig {
 //		return new InMemoryUserDetailsManager(admin, user);
 		return new UserInfoUserDetailsServiceImpl();
 	}
-	
+
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
-	
+
 	@Bean
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-		return http.csrf(csrf -> csrf.disable())
-				.authorizeHttpRequests(auth -> auth.requestMatchers("/swagger-ui/**","/api/authors/**","/api/validate")
-													.permitAll()
-													.anyRequest()
-													.authenticated())
-				.formLogin(Customizer.withDefaults())
-				.addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class)
-				.build();
+		return http.headers(headers -> headers.frameOptions().disable()).csrf(csrf -> csrf.disable())
+				.authorizeHttpRequests(auth -> auth
+						.requestMatchers("/swagger-ui/**", "/api/authors/**", "/api/validate", "/h2-console/**")
+						.permitAll().anyRequest().authenticated())
+				// .formLogin(Customizer.withDefaults())
+				.addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class).build();
 	}
-	
+
 	@Bean
 	public AuthenticationProvider authenticationProvider() {
 		DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
 		authenticationProvider.setUserDetailsService(userDetailsService());
 		authenticationProvider.setPasswordEncoder(passwordEncoder());
-	return authenticationProvider;
+		return authenticationProvider;
 	}
 
-	 @Bean
-	    public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
-	        return config.getAuthenticationManager();
-	    }
+	@Bean
+	public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
+		return config.getAuthenticationManager();
+	}
 }

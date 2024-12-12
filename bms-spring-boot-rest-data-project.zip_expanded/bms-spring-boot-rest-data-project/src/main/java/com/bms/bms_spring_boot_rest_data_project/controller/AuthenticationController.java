@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -27,8 +28,11 @@ public class AuthenticationController {
 		Authentication authentication = authenticationManager
 				.authenticate(new UsernamePasswordAuthenticationToken(userInfo.getName(), userInfo.getPassword()));
 		if (authentication.isAuthenticated()) {
+			System.out.println("authentication 2: " + authentication);
+			System.out.println("Security Context 2: " + SecurityContextHolder.getContext().getAuthentication());
 			return jwtService.generateToken(userInfo.getName());
 		} else {
+			System.out.println("Security Context 3: " + SecurityContextHolder.getContext().getAuthentication());
 			throw new UsernameNotFoundException("invalid user request !");
 		}
 	}

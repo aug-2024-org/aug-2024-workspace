@@ -6,6 +6,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -26,10 +27,13 @@ public class AuthorController {
 	@Autowired
 	AuthorService authorService;
 	
+	@Autowired
+	AuthenticationManager authentication;
 	// fetchAllAuthors
 	// GET http://localhost:8787/api/authors
 	@GetMapping("/authors")
 	public ResponseEntity<Collection<AuthorPojo>> fetchAllAuthors(){
+		System.out.println("authentication 2: " + authentication);
 		Collection<AuthorPojo> allAuthors = authorService.fetchAllAuthors();
 		return new ResponseEntity<Collection<AuthorPojo>>(allAuthors, HttpStatus.OK);
 	}
